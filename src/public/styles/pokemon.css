@@ -1,0 +1,171 @@
+/* Base Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: red;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+div {
+    text-align: center;
+    padding: 20px;
+}
+
+img {
+    max-width: 200px;
+    height: auto;
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-size: 2em;
+    color: #3d7dca;
+    margin-bottom: 10px;
+}
+
+h3 {
+    background-color: #3d7dca;
+    color: white;
+    padding: 10px;
+    margin: 0;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+/* Types Section */
+.types {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.types p {
+    font-size: 1.2em;
+    color: #333;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    display: inline-block;
+}
+
+.type-bug {
+    background-color: #92bc2c;
+    color: white;
+}
+
+.type-dark {
+    background-color: #595761;
+    color: white;
+}
+
+.type-dragon {
+    background-color: #0a6dc4;
+    color: white;
+}
+
+/* Add more type classes as needed */
+
+/* Abilities List */
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+li {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 5px 0;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.2em;
+    color: #333;
+}
+
+li:nth-child(odd) {
+    background-color: #f1f1f1;
+}
+
+/* Stats Section */
+.stats {
+    padding: 20px;
+}
+
+.stat-bar {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.stat-name {
+    width: 120px;
+    text-align: left;
+    font-size: 1.1em;
+    color: #333;
+}
+
+.bar-background {
+    flex: 1;
+    background-color: #ddd;
+    border-radius: 5px;
+    height: 20px;
+    margin: 0 10px;
+    position: relative;
+}
+
+.bar-fill {
+    background-color: #3d7dca;
+    height: 100%;
+    border-radius: 5px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.stat-value {
+    width: 50px;
+    text-align: right;
+    font-size: 1.1em;
+    color: #333;
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    img {
+        max-width: 150px;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    h3 {
+        font-size: 1.2em;
+    }
+
+    .types p {
+        font-size: 1em;
+    }
+
+    .stat-name, .stat-value {
+        font-size: 1em;
+    }
+}

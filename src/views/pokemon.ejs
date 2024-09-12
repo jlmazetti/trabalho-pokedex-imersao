@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhes</title>
+    <link rel="stylesheet" href="/styles/pokemon.css">
+</head>
+<body>
+    <header>
+        <h1>Pokedex</h1>
+    </header>
+    <div>
+        <h2><%= id %> - <%= name %></h2>
+        <img src="<%= sprites.front_default %>">
+    </div>
+    <div class="types">
+        <h3>Types</h3>
+        <% types.forEach(function(type) { %>
+            <p class="type-<%= type.type.name.toLowerCase() %>"><%= type.type.name %></p>
+        <% }) %>
+    </div>
+    <ul>
+        <h3>Abilities</h3>
+        <% abilities.forEach(function(ability) { %>
+            <li><%= ability.ability.name %></li>
+        <% }) %>
+    </ul>
+    <div class="stats">
+        <h3>Stats</h3>
+        <% stats.forEach(function(stat) { %>
+            <div class="stat-bar">
+                <span class="stat-name"><%= stat.stat.name %></span>
+                <div class="bar-background">
+                    <div class="bar-fill" style="width: <%= stat.base_stat %>%"></div>
+                </div>
+                <span class="stat-value"><%= stat.base_stat %></span>
+            </div>
+        <% }) %>
+    </div>
+</body>
+</html>
